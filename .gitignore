@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.venv-nlu/
+.venv-tod/
+venv/
+
+# Environment variables
+.env
+
+# Audio recordings
+voice/recordings/
+*.wav
+*.mp3
+
+# Node / Web
+node_modules/
+dist/
+build/
+apps/pos-web/.runtime/
+
+# Local databases and sensitive runtime data
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+data/orders.sqlite3
+data/face_enrollment/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Large model files
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Hugging Face / trained model outputs
+nlu/saved_models/
+nlu/checkpoints/
+outputs/
+wandb/
+.cache/huggingface/
+
+# ROS 2 generated directories
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+
+# Temporary cuSPARSELt files
+tmp_cusparselt/
+
+# Regenerable TOD intermediate datasets
+data/tod/pumpkin_tod_v1_train_valid.jsonl
+data/tod/pumpkin_tod_v1_test.jsonl
+data/tod/pumpkin_tod_v1_multiturn_train_valid.jsonl
+data/tod/pumpkin_tod_v1_multiturn_test.jsonl
+data/tod/pumpkin_tod_v1_sft_train_valid.jsonl
+data/tod/pumpkin_tod_v1_sft_test.jsonl
+data/tod/pumpkin_tod_v1_base_review_sample.jsonl
+data/tod/pumpkin_tod_v1_multiturn_review_sample.jsonl
+data/tod/qwen/pumpkin_tod_v1_train.jsonl
+data/tod/qwen/pumpkin_tod_v1_validation.jsonl
+data/tod/qwen/pumpkin_tod_v1_test.jsonl
