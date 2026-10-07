@@ -298,8 +298,6 @@ created = self.client.submit_confirmed_order(
 
 ## **📚 저장소 구조 및 실행 진입점**
 
-현재 `main` 브랜치의 구조를 기능 단위로 정리했습니다. 세부 파일 목록은 각 폴더의 README와 실제 소스 트리를 기준으로 확인합니다.
-
 | 경로 | 역할 |
 |---|---|
 | [`.github/workflows/`](.github/workflows/) | 모바일 앱, 시연 웹, 얼굴 백엔드, TOD 학습 코드 자동 검증 |
@@ -331,7 +329,7 @@ bash scripts/run_robot_with_monitor.sh
 고객 앱을 Windows PowerShell에서 실행:
 
 ```powershell
-cd <pumpkin_public 저장소 경로>
+cd <저장소 경로>
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\run_customer_mobile.ps1
 ```
 
@@ -352,4 +350,4 @@ powershell -ExecutionPolicy Bypass -File .\face_backend\deploy.ps1
 
 세부 Jetson 환경은 [`JETSON_RUNTIME_README.md`](JETSON_RUNTIME_README.md), 로봇 실행 스크립트 구성은 [`scripts/README.md`](scripts/README.md), NLU 구조는 [`nlu/README.md`](nlu/README.md)를 참고합니다.
 
-> 모델 가중치와 로컬 가상환경, 런타임 로그·비밀 설정은 저장소에 포함하지 않습니다. 학습 데이터와 실험 결과는 재현성을 위해 `data/`와 `experiments/`에 버전 관리합니다.
+> 학습 데이터와 실험 결과는 재현성을 위해 `data/`와 `experiments/`에 버전 관리합니다.
